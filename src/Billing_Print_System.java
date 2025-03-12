@@ -43,3 +43,35 @@ public class Billing_Print_System extends javax.swing.JFrame {
          cart_total();
          
     }
+
+        
+    public void cart_total(){
+        
+      int numofrow = jTable1.getRowCount();
+       double total = 0;
+
+       for (int i = 0; i < numofrow; i++) {
+    try {
+        double value = Double.valueOf(jTable1.getValueAt(i, 2).toString());
+        total += value;
+    } catch (NumberFormatException e) {
+        // Handle the case where the conversion fails (e.g., the cell value is not a valid double)
+        System.err.println("Error converting value to double in row " + i + ": " + e.getMessage());
+    }
+    
+    DecimalFormat df = new DecimalFormat("00.00");  //fix above issue
+    String d1 = df.format(total);
+    
+    bill_tot.setText(d1);  //sub total
+    
+    //Total
+    double tx = Double.valueOf(tax.getText());
+    double ds = Double.valueOf(dis.getText());
+    
+    double allTot = total + tx - ds;
+    
+    DecimalFormat dff = new DecimalFormat("00.00");  //fix above issue
+    String d2 = dff.format(allTot);
+    
+    full_total.setText(d2);
+}
