@@ -554,3 +554,14 @@ public class Billing_Print_System extends javax.swing.JFrame {
                         .addComponent(pay_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
+
+               jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        jLabel7.setText("Omega Pizza Hunt");
+
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton2.setText("Remove");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
