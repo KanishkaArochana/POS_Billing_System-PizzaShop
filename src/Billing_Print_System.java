@@ -380,3 +380,95 @@ public class Billing_Print_System extends javax.swing.JFrame {
                     .addComponent(jLabel14))
                 .addGap(52, 52, 52))
         );
+
+ jTable1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Iteam", "Qty", "Price"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        jTextPane1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jScrollPane2.setViewportView(jTextPane1);
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel1.setText("Total ($) :");
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel2.setText("Sub Total ($) :");
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel3.setText("Cash  :");
+
+        full_total.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        full_total.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        full_total.setText("0");
+
+        pay.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        pay.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                payActionPerformed(evt);
+            }
+        });
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel6.setText("Tax $ :");
+
+        bill_tot.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        bill_tot.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        bill_tot.setText("0");
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel8.setText("Dis $ :");
+
+        pay_btn.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        pay_btn.setText("Pay");
+        pay_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pay_btnActionPerformed(evt);
+            }
+        });
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel10.setText("Bal :");
+
+        balnce.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        balnce.setText("0");
+
+        jButton14.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jButton14.setText("Print");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
+
+        dis.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        dis.setText("0");
+        dis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                disActionPerformed(evt);
+            }
+        });
+        dis.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                disKeyReleased(evt);
+            }
+        });
+
+        tax.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        tax.setText("2");
+        tax.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                taxActionPerformed(evt);
+            }
+        });
+        tax.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                taxKeyReleased(evt);
+            }
+        });
