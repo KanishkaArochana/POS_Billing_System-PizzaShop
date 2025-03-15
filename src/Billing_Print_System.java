@@ -646,3 +646,29 @@ public class Billing_Print_System extends javax.swing.JFrame {
         // TODO add your handling code here:
         cart_total();
     }//GEN-LAST:event_disKeyReleased
+ private void pay_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pay_btnActionPerformed
+        // TODO add your handling code here:
+        
+        //Pay Bill
+        try {
+    double tot = Double.valueOf(full_total.getText());
+    double py = Double.valueOf(pay.getText());
+
+    double bal = py - tot;
+    
+     DecimalFormat dff = new DecimalFormat("00.00");  //fix above issue
+    String d2 = dff.format(bal);
+ 
+
+    balnce.setText(d2);
+} 
+        catch (NumberFormatException e) {
+    // Handle the case where the conversion fails (e.g., invalid input)
+    System.err.println("Error converting text to double: " + e.getMessage());
+    // You might want to provide feedback to the user or handle the error in an appropriate way
+}
+        
+        //Print Bill Function Call
+         drwobill(); 
+
+    }//GEN-LAST:event_pay_btnActionPerformed
