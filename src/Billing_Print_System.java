@@ -626,3 +626,23 @@ public class Billing_Print_System extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+   private void taxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_taxActionPerformed
+        // TODO add your handling code here:
+//        cart_total();
+    }//GEN-LAST:event_taxActionPerformed
+
+    private void disActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_disActionPerformed
+        // TODO add your handling code here:
+//        cart_total();
+    }//GEN-LAST:event_disActionPerformed
+
+    private void taxKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_taxKeyReleased
+        // TODO add your handling code here:
+        cart_total();
+    }//GEN-LAST:event_taxKeyReleased
+
+    private void disKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_disKeyReleased
+        // TODO add your handling code here:
+        cart_total();
+    }//GEN-LAST:event_disKeyReleased
