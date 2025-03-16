@@ -700,3 +700,29 @@ public class Billing_Print_System extends javax.swing.JFrame {
         pay.setText("");
         balnce.setText("");
     }//GEN-LAST:event_jButton15ActionPerformed
+
+
+    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
+        // TODO add your handling code here:
+        addTable("Southern-Crich",16.00);
+    }//GEN-LAST:event_jButton22ActionPerformed
+
+    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+        // TODO add your handling code here:
+        addTable("Veggie-Hawaii",18.90);
+    }//GEN-LAST:event_jButton23ActionPerformed
+
+    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+        // TODO add your handling code here:
+        addTable("Mushroom Pizza ",15.00);
+    }//GEN-LAST:event_jButton26ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        // TODO add your handling code here:
+        addTable("Cha-Cha",26.00);
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
+        // TODO add your handling code here:
+        addTable("Sicilian-Pizza",19.00);
+    }//GEN-LAST:event
