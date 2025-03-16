@@ -756,3 +756,17 @@ public class Billing_Print_System extends javax.swing.JFrame {
         // TODO add your handling code here:
         addTable("Solo Special",32.00);
     }//GEN-LAST:event_jButton27ActionPerformed
+
+    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+        // TODO add your handling code here:
+        addTable("Family Feast Pack",45.00);
+    }//GEN-LAST:event_jButton28ActionPerformed
+
+    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton30ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+         addTable("Cha-Cha Pizza ",22.50);
+    }//GEN-LAST:event_jButton1ActionPerformed
