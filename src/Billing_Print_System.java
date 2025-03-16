@@ -726,3 +726,33 @@ public class Billing_Print_System extends javax.swing.JFrame {
         // TODO add your handling code here:
         addTable("Sicilian-Pizza",19.00);
     }//GEN-LAST:event
+
+     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        // TODO add your handling code here:
+        addTable("Topping-Pizza",24.80);
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+        // TODO add your handling code here:
+        addTable("Veg-Pizza",16.00);
+    }//GEN-LAST:event_jButton24ActionPerformed
+
+    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
+        // TODO add your handling code here:
+        addTable("Party Combo",56.00);
+    }//GEN-LAST:event_jButton29ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        // TODO add your handling code here:
+        addTable("BBQ Pizza",24.50);
+    }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+        // TODO add your handling code here:
+        addTable("Chicken Pizza",22.00);
+    }//GEN-LAST:event_jButton25ActionPerformed
+
+    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+        // TODO add your handling code here:
+        addTable("Solo Special",32.00);
+    }//GEN-LAST:event_jButton27ActionPerformed
