@@ -672,3 +672,31 @@ public class Billing_Print_System extends javax.swing.JFrame {
          drwobill(); 
 
     }//GEN-LAST:event_pay_btnActionPerformed
+
+     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        // TODO add your handling code here:
+        try{
+            jTextPane1.print();
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        // TODO add your handling code here:
+        addTable("Cherry-Pizza",18.00);
+    }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        // TODO add your handling code here:
+        
+        DefaultTableModel dt = (DefaultTableModel) jTable1.getModel();
+        dt.setRowCount(0);
+        
+        jTextPane1.setText("");
+        bill_tot.setText("");
+        full_total.setText("");
+        pay.setText("");
+        balnce.setText("");
+    }//GEN-LAST:event_jButton15ActionPerformed
