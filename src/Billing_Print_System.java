@@ -813,3 +813,32 @@ public class Billing_Print_System extends javax.swing.JFrame {
 
             jTextPane1.setText(jTextPane1.getText() + " " + itm + "\t" + qt + "\t\t" + prc + "\n");
         }
+
+        
+        //end product for loop
+        jTextPane1.setText(jTextPane1.getText() + "-------------------------------------------------------- \n");
+        jTextPane1.setText(jTextPane1.getText() + " Subtotal : \t\t\t" + bill_tot.getText() + "\n");
+        jTextPane1.setText(jTextPane1.getText() + " Tax      : \t\t\t" + tax.getText() + "\n");
+        jTextPane1.setText(jTextPane1.getText() + " Discount : \t\t\t" + dis.getText() + "\n");
+        jTextPane1.setText(jTextPane1.getText() + "-------------------------------------------------------- \n");
+        jTextPane1.setText(jTextPane1.getText() + " Grand Total : \t\t\t" + full_total.getText() + "\n");
+        jTextPane1.setText(jTextPane1.getText() + " Paid        : \t\t\t" + pay.getText() + "\n");
+        jTextPane1.setText(jTextPane1.getText() + " Balance     : \t\t\t" + balnce.getText() + "\n");
+        jTextPane1.setText(jTextPane1.getText() + "-------------------------------------------------------- \n");
+
+        //Date Time
+        Date dd = new Date();
+        
+        // Correct date format
+        SimpleDateFormat datef = new SimpleDateFormat("yyyy-MM-dd");
+        
+        // Correct time format
+        SimpleDateFormat timef = new SimpleDateFormat("HH:mm:ss");
+        
+        String date = datef.format(dd);
+        String time = timef.format(dd);
+
+        // Assuming jTextPane1 is a JTextPane object
+        jTextPane1.setText(jTextPane1.getText() + "Date: " + date + "\t\t  Time: " + time + " \n");
+
+    }
