@@ -770,3 +770,19 @@ public class Billing_Print_System extends javax.swing.JFrame {
         // TODO add your handling code here:
          addTable("Cha-Cha Pizza ",22.50);
     }//GEN-LAST:event_jButton1ActionPerformed
+ private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        
+    DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+    int selectedRow = jTable1.getSelectedRow();
+    
+    if (selectedRow != -1) { // Ensure a row is selected
+        model.removeRow(selectedRow);
+        cart_total(); // Recalculate total after removal
+    } else {
+        JOptionPane.showMessageDialog(this, "Please select an item to remove.");
+    }
+
+
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
