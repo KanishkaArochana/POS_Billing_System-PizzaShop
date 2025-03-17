@@ -786,3 +786,30 @@ public class Billing_Print_System extends javax.swing.JFrame {
 
         
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void payActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_payActionPerformed
+
+    
+    //Bill Print
+    public void drwobill() {
+        jTextPane1.setText("                         The Tech In Box Cafe\n");
+        jTextPane1.setText(jTextPane1.getText() + "                              568/Green \n");
+        jTextPane1.setText(jTextPane1.getText() + "                         Colombo,Srilanka \n");
+        jTextPane1.setText(jTextPane1.getText() + "                             011 2344567\n");
+        jTextPane1.setText(jTextPane1.getText() + "------------------------------------------------------- \n");
+        jTextPane1.setText(jTextPane1.getText() + " Item \t\t Qty \t\t Price \n");
+        jTextPane1.setText(jTextPane1.getText() + "------------------------------------------------------- \n");
+
+        //Add jtable Products List
+        DefaultTableModel dt = (DefaultTableModel) jTable1.getModel();
+
+        for (int i = 0; i < jTable1.getRowCount(); i++) {
+
+            String itm = dt.getValueAt(i, 0).toString(); //Iteam Name
+            String qt = dt.getValueAt(i, 1).toString(); //Iteam Qty
+            String prc = dt.getValueAt(i, 2).toString(); //Iteam cal price
+
+            jTextPane1.setText(jTextPane1.getText() + " " + itm + "\t" + qt + "\t\t" + prc + "\n");
+        }
