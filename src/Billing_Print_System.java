@@ -1,3 +1,4 @@
+
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -19,8 +20,8 @@ public class Billing_Print_System extends javax.swing.JFrame {
     /**
      * Creates new form Billing_Print_System
      */
-
-        public void addTable(String Name,Double Price){    
+    
+    public void addTable(String Name,Double Price){    
        
         String Qty = JOptionPane.showInputDialog(null,"Plese Enter Your Quantity","1");
        
@@ -43,8 +44,7 @@ public class Billing_Print_System extends javax.swing.JFrame {
          cart_total();
          
     }
-
-        
+    
     public void cart_total(){
         
       int numofrow = jTable1.getRowCount();
@@ -140,7 +140,7 @@ public class Billing_Print_System extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
 
- setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jButton15.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jButton15.setText("New");
@@ -249,7 +249,6 @@ public class Billing_Print_System extends javax.swing.JFrame {
             }
         });
 
-        
         jLabel9.setText("Solo Special ");
 
         jLabel11.setText("Family Feast Pack ");
@@ -329,7 +328,7 @@ public class Billing_Print_System extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
-                 .addGroup(jPanel1Layout.createSequentialGroup()
+            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(142, 142, 142)
                 .addComponent(jLabel4)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -381,7 +380,7 @@ public class Billing_Print_System extends javax.swing.JFrame {
                 .addGap(52, 52, 52))
         );
 
- jTable1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jTable1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -473,7 +472,6 @@ public class Billing_Print_System extends javax.swing.JFrame {
             }
         });
 
-        
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -555,7 +553,7 @@ public class Billing_Print_System extends javax.swing.JFrame {
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
-               jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
         jLabel7.setText("Omega Pizza Hunt");
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -566,7 +564,6 @@ public class Billing_Print_System extends javax.swing.JFrame {
             }
         });
 
-        
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -627,7 +624,7 @@ public class Billing_Print_System extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-   private void taxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_taxActionPerformed
+    private void taxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_taxActionPerformed
         // TODO add your handling code here:
 //        cart_total();
     }//GEN-LAST:event_taxActionPerformed
@@ -646,7 +643,8 @@ public class Billing_Print_System extends javax.swing.JFrame {
         // TODO add your handling code here:
         cart_total();
     }//GEN-LAST:event_disKeyReleased
- private void pay_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pay_btnActionPerformed
+
+    private void pay_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pay_btnActionPerformed
         // TODO add your handling code here:
         
         //Pay Bill
@@ -673,7 +671,7 @@ public class Billing_Print_System extends javax.swing.JFrame {
 
     }//GEN-LAST:event_pay_btnActionPerformed
 
-     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
         // TODO add your handling code here:
         try{
             jTextPane1.print();
@@ -701,7 +699,6 @@ public class Billing_Print_System extends javax.swing.JFrame {
         balnce.setText("");
     }//GEN-LAST:event_jButton15ActionPerformed
 
-
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
         // TODO add your handling code here:
         addTable("Southern-Crich",16.00);
@@ -725,9 +722,9 @@ public class Billing_Print_System extends javax.swing.JFrame {
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         // TODO add your handling code here:
         addTable("Sicilian-Pizza",19.00);
-    }//GEN-LAST:event
+    }//GEN-LAST:event_jButton21ActionPerformed
 
-     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         // TODO add your handling code here:
         addTable("Topping-Pizza",24.80);
     }//GEN-LAST:event_jButton17ActionPerformed
@@ -770,7 +767,8 @@ public class Billing_Print_System extends javax.swing.JFrame {
         // TODO add your handling code here:
          addTable("Cha-Cha Pizza ",22.50);
     }//GEN-LAST:event_jButton1ActionPerformed
- private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         
     DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
@@ -814,7 +812,6 @@ public class Billing_Print_System extends javax.swing.JFrame {
             jTextPane1.setText(jTextPane1.getText() + " " + itm + "\t" + qt + "\t\t" + prc + "\n");
         }
 
-        
         //end product for loop
         jTextPane1.setText(jTextPane1.getText() + "-------------------------------------------------------- \n");
         jTextPane1.setText(jTextPane1.getText() + " Subtotal : \t\t\t" + bill_tot.getText() + "\n");
@@ -842,8 +839,8 @@ public class Billing_Print_System extends javax.swing.JFrame {
         jTextPane1.setText(jTextPane1.getText() + "Date: " + date + "\t\t  Time: " + time + " \n");
 
     }
-
-      
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -860,7 +857,7 @@ public class Billing_Print_System extends javax.swing.JFrame {
                     break;
                 }
             }
-                    } catch (ClassNotFoundException ex) {
+        } catch (ClassNotFoundException ex) {
             java.util.logging.Logger.getLogger(Billing_Print_System.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
             java.util.logging.Logger.getLogger(Billing_Print_System.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
@@ -878,3 +875,52 @@ public class Billing_Print_System extends javax.swing.JFrame {
             }
         });
     }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel balnce;
+    private javax.swing.JLabel bill_tot;
+    private javax.swing.JTextField dis;
+    private javax.swing.JLabel full_total;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton21;
+    private javax.swing.JButton jButton22;
+    private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton24;
+    private javax.swing.JButton jButton25;
+    private javax.swing.JButton jButton26;
+    private javax.swing.JButton jButton27;
+    private javax.swing.JButton jButton28;
+    private javax.swing.JButton jButton29;
+    private javax.swing.JButton jButton30;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JTextField pay;
+    private javax.swing.JButton pay_btn;
+    private javax.swing.JTextField tax;
+    // End of variables declaration//GEN-END:variables
+}
